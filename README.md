@@ -18,7 +18,7 @@ Running `grunt test` will run the unit tests with karma.
 
 # Challenge Description
 
-At Cambria, we would like a web application to track our designs through reaseach and development (R&D) to deprication or release. The users need to be able interact with a data table to view the designs as they please.
+At Cambria, we would like a web application to track our designs through reaseach and development (R&D) to deprecation or release. The users need to be able interact with a data table to view the designs as they please.
 
 ## Acceptance Criteria
 
