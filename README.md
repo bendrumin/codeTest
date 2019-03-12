@@ -7,8 +7,6 @@ version 0.16.0.
 
 1. Run `npm install`
 2. Run `bower install`
-3. Run `npm install karma`
-4. Run `npm install grunt-karma`
 
 ## Build & development
 
