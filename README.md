@@ -23,10 +23,10 @@ At Cambria, we would like a web application to track our designs through reaseac
 ## Acceptance Criteria
 
 1. The designs are displayed in a 3 column data table.
-   1.1 Design Name
-   1.2 Created At
-   1.3 Status
+   * Design Name
+   * Created At
+   * Status
 2. The data table can be sorted by any of the columns.
-   2.1 Design Name is sorted alphabetically
-   2.2 Created At is sorted chronologically
-   2.3 Status is sorted by process step. The users would like to sort statuses in the order of "R&D", "Release", then "Deprication"
+   * Design Name is sorted alphabetically
+   * Created At is sorted chronologically
+   * Status is sorted by process step. The users would like to sort statuses in the order of "R&D", "Release", then "Deprication"
