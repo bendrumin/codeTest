@@ -1,41 +1,43 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<div class="container" ng-app="codeChallengeTemplateApp" ng-controller="MainCtrl">
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+  <table class="table table-resonsive">
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+    <thead>
+      <tr>
+        <td>
+          <a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse">
+            Design Name
+            <span ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></span>
+          </a>
+        </td>
+        <td>
+          <a href="#" ng-click="sortType = 'created'; sortReverse = !sortReverse">
+          Created At
+            <span ng-show="sortType == 'created' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'created' && sortReverse" class="fa fa-caret-up"></span>
+          </a>
+        </td>
+        <td>
+          <a href="#" ng-click="sortType = 'status'; sortReverse = !sortReverse">
+          Status
+            <span ng-show="sortType == 'status' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'status' && sortReverse" class="fa fa-caret-up"></span>
+          </a>
+        </td>
+      </tr>
+    </thead>
 
-<div class="row table">
-  <div ng-app="myApp" ng-controller="MainCtrl">
+    <tbody>
+      <tr ng-repeat="design in cambria | orderBy:sortType:sortReverse">
+        <td>{{ design.name }}</td>
+        <td>{{ design.created }}</td>
+        <td>{{ design.status }}</td>
+      </tr>
+    </tbody>
 
-  <table>
-    <tr ng-repeat="x in names">
-      <td>{{ x.Design Name }}</td>
-      <td>{{ x.Created At }}</td>
-      <td>{{ x.Status }}</td>
-    </tr>
   </table>
 
-  </div>
 
-  <script>
-
-  </script>
 </div>
