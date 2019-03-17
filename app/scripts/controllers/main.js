@@ -15,3 +15,9 @@ angular.module('codeChallengeTemplateApp')
       'Karma'
     ];
   });
+
+  var app = angular.module('myApp', []);
+  app.controller('MainCtrl', function($scope, $http) {
+      $http.get('../../test-data/designs.csv')
+      .then(function (response) {$scope.names = response.data.records;});
+  });
