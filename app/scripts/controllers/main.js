@@ -17,7 +17,6 @@ angular.module('codeChallengeTemplateApp')
   $scope.sortType     = 'name'; // set the default sort type
   $scope.sortReverse  = false;  // set the default sort order
 
-  // create the list of sushi rolls
   $scope.cambria = [
     { name: 'Baybridge', created: ' 2019-02-01', status:  'R&D' },
     { name: 'Bently', created: ' 2018-11-01', status:  'R&D' },
